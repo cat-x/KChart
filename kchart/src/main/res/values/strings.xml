@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="kchart_introduction">简介</string>
+    <string name="kchart_ma_des">MA指标由一段时间内的收盘价之和取算数平均数后连线，可抚平短期波动，反映出长期趋势或周期。</string>
+    <string name="kchart_boll_des">BOLL指标又叫布林带，其基本的型态是由三条轨道线组成的带状通道（中轨和上、下轨各一条）。中轨为价格的平均成本，上轨和下轨可分别视为价格的压力线和支撑线。</string>
+    <string name="kchart_macd_des">MACD指标由一组曲线与图形组成，通过收盘时价格或指数的快变及慢变的指数移动平均值（EMA）之间的差计算出来。“S”指更短时段的EMA，而“L”则指较长时段的EMA，最常用的是12及26日EMA。</string>
+    <string name="kchart_kdj_des">KDJ指标通过一个特定的周期（常为9日、9周等）内出现过的最高价、最低价及最后一个计算周期的收盘价及这三者之间的比例关系，来计算最后一个计算周期的未成熟随机值，然后根据平滑移动平均线的方法来计算K值、D值与J值，并绘成曲线图来研判价格走势。</string>
+    <string name="kchart_rsi_des">RSI指标是比较价格升降运动以表达价格强度的技术分析工具，其中14日RSI最具代表性。</string>
+    <string name="kchart_wr_des">WR指标是一个振荡指标，是依价格的摆动点来度量是否处于超买或超卖的现象。它衡量多空双方创出的峰值（最高价）距每天收盘价的距离与一定时间内（如7天、14天、28天等）的价格波动范围的比例，以提供出价格趋势反转的讯号。</string>
+    <string name="kchart_reset">重置</string>
+    <string name="kchart_indicator_config">指标设置</string>
+    <string name="kchart_info_time">时间:</string>
+    <string name="kchart_info_open_price">开:</string>
+    <string name="kchart_info_hign_price">高:</string>
+    <string name="kchart_info_low_price">低:</string>
+    <string name="kchart_info_close_price">收:</string>
+    <string name="kchart_info_rise_fall_num">涨跌额:</string>
+    <string name="kchart_info_quote_change">涨跌幅:</string>
+    <string name="kchart_info_volume">成交量:</string>
+</resources>

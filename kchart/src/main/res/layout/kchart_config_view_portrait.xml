@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="#131F30">
+
+    <LinearLayout
+        android:id="@+id/tradeTimeGroupLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6">
+
+            <xyz.a1api.kchart.widget.TimeStepView
+                android:id="@+id/timeStepTimeSharingView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:text="分时" />
+
+
+            <xyz.a1api.kchart.widget.TimeStepView
+                android:id="@+id/timeStep15MinView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:text="15分钟" />
+
+
+            <xyz.a1api.kchart.widget.TimeStepView
+                android:id="@+id/timeStep1HourView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:text="1小时" />
+
+
+            <xyz.a1api.kchart.widget.TimeStepView
+                android:id="@+id/timeStep4HourView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:text="4小时" />
+
+            <xyz.a1api.kchart.widget.TimeStepView
+                android:id="@+id/timeStep1DayView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:text="1天" />
+
+            <xyz.a1api.kchart.widget.TimeStepView
+                android:id="@+id/timeStepMoreView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:text="更多" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/moreTradeToolView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/kchart_icon_setting_config" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/marketDivider1View"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <xyz.a1api.kchart.view.KChartView
+            android:id="@+id/mKChartView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:kc_background_color="#0F1927"
+            app:kc_grid_line_color="#182537">
+
+        </xyz.a1api.kchart.view.KChartView>
+
+        <LinearLayout
+            android:id="@+id/tradeMoreTimeGroupLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:background="#131F30"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <xyz.a1api.kchart.widget.TimeStepView
+                android:id="@+id/timeStep1MinView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:text="1分钟" />
+
+            <xyz.a1api.kchart.widget.TimeStepView
+                android:id="@+id/timeStep5MinView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:text="5分钟" />
+
+
+            <xyz.a1api.kchart.widget.TimeStepView
+                android:id="@+id/timeStep30MinView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:text="30分钟" />
+
+
+            <xyz.a1api.kchart.widget.TimeStepView
+                android:id="@+id/timeStep1WeekHourView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:text="1周" />
+
+            <xyz.a1api.kchart.widget.TimeStepView
+                android:id="@+id/timeStep1MonthView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:text="1月" />
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tradeDataIndicatorLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:background="#131F30"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/mainChartLabelView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="主图"
+                    android:textColor="#6D87A8"
+                    android:textSize="14sp" />
+
+                <xyz.a1api.kchart.widget.IndicatorTextView
+                    android:id="@+id/mainChartMAView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@id/mainChartLabelView"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    app:nameText="MA" />
+
+                <xyz.a1api.kchart.widget.IndicatorTextView
+                    android:id="@+id/mainChartBOLLView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@id/mainChartMAView"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    app:nameText="BOLL" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/mainChartSeeView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    app:tint="@color/indicator_select_color"
+                    android:src="@drawable/kchart_icon_see_d" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/secondChartLabelView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="副图"
+                    android:textColor="#6D87A8"
+                    android:textSize="14sp" />
+
+                <xyz.a1api.kchart.widget.IndicatorTextView
+                    android:id="@+id/secondChartMACDView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@id/secondChartLabelView"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    app:nameText="MACD" />
+
+                <xyz.a1api.kchart.widget.IndicatorTextView
+                    android:id="@+id/secondChartKDJView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@id/secondChartMACDView"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    app:nameText="KDJ" />
+
+                <xyz.a1api.kchart.widget.IndicatorTextView
+                    android:id="@+id/secondChartRSIView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@id/secondChartKDJView"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    app:nameText="RSI" />
+
+                <xyz.a1api.kchart.widget.IndicatorTextView
+                    android:id="@+id/secondChartWRView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@id/secondChartRSIView"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    app:nameText="WR" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/secondChartSeeView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    app:tint="@color/indicator_select_color"
+                    android:src="@drawable/kchart_icon_see_d"
+                    android:gravity="center_vertical" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <RelativeLayout
+                android:id="@+id/configChartDataView"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="指标设置"
+                    android:textColor="#6D87A8"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:src="@mipmap/kchart_icon_setting_config" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#061623"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#151D32"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/kChartBackButton"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:padding="12dp"
+            app:srcCompat="@mipmap/kchart_icon_back" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/kchart_indicator_config"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:layout_width="42dp"
+            android:layout_height="42dp" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/contentScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/KChartConfigTitle.ClassText"
+                android:text="@string/kchart_main_draw" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+
+            <RelativeLayout
+                android:id="@+id/layoutMAView"
+                style="@style/KChartConfigTitle">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/nameMATextView"
+                    style="@style/KChartConfigIndicatorTitleText"
+                    android:text="MA" />
+
+
+                <LinearLayout
+                    android:id="@+id/maTagLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/iconMAImageView"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iconMAImageView"
+                    style="@style/KChartConfigIndicatorDropImg"
+                    app:tint="@color/kchart_config_indicator_tag_text" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/infoMARelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout style="@style/KChartConfigIndicatorEditTop">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ma1Check"
+                            style="@style/KChartConfigIndicatorCheck.K1" />
+
+                        <LinearLayout style="@style/KChartConfigIndicatorEditBg.K1">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MA"
+                                android:textColor="#3D516B" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/ma1TextView"
+                                style="@style/KChartConfigIndicatorEditText.K1"
+                                tools:text="15" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/KChartConfigIndicatorEditTop">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ma2Check"
+                            style="@style/KChartConfigIndicatorCheck.K2" />
+
+                        <LinearLayout style="@style/KChartConfigIndicatorEditBg.K2">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:text="MA"
+                                android:textColor="#3D516B" />
+
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/ma2TextView"
+                                style="@style/KChartConfigIndicatorEditText.K2"
+                                tools:text="15" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout style="@style/KChartConfigIndicatorEditTop">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ma3Check"
+                            style="@style/KChartConfigIndicatorCheck.K3" />
+
+                        <LinearLayout style="@style/KChartConfigIndicatorEditBg.K3">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:text="MA"
+                                android:textColor="#3D516B" />
+
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/ma3TextView"
+                                style="@style/KChartConfigIndicatorEditText.K3"
+                                tools:text="15" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/KChartConfigIndicatorEditTop">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ma4Check"
+                            style="@style/KChartConfigIndicatorCheck.K4" />
+
+                        <LinearLayout style="@style/KChartConfigIndicatorEditBg.K4">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:text="MA"
+                                android:textColor="#3D516B" />
+
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/ma4TextView"
+                                style="@style/KChartConfigIndicatorEditText.K4"
+                                tools:text="15" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout style="@style/KChartConfigIndicatorEditTop">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ma5Check"
+                            style="@style/KChartConfigIndicatorCheck.K5" />
+
+                        <LinearLayout style="@style/KChartConfigIndicatorEditBg.K5">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:text="MA"
+                                android:textColor="#3D516B" />
+
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/ma5TextView"
+                                style="@style/KChartConfigIndicatorEditText.K5"
+                                tools:text="15" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/KChartConfigIndicatorEditTop">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ma6Check"
+                            style="@style/KChartConfigIndicatorCheck.K6" />
+
+                        <LinearLayout style="@style/KChartConfigIndicatorEditBg.K6">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:text="MA"
+                                android:textColor="#3D516B" />
+
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/ma6TextView"
+                                style="@style/KChartConfigIndicatorEditText.K6"
+                                tools:text="15" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/kchart_reset_button" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/kchart_config_indicator_line2" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/KChartConfigIndicatorSubText"
+                        android:text="@string/kchart_introduction" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/KChartConfigIndicatorDesText"
+                        android:text="@string/kchart_ma_des" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+
+            <RelativeLayout
+                android:id="@+id/layoutBOLLView"
+                style="@style/KChartConfigTitle">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/nameBOLLTextView"
+                    style="@style/KChartConfigIndicatorTitleText"
+                    android:text="BOLL" />
+
+                <LinearLayout
+                    android:id="@+id/bollTagLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/iconBOLLImageView"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iconBOLLImageView"
+                    style="@style/KChartConfigIndicatorDropImg"
+                    app:tint="@color/kchart_config_indicator_tag_text" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/infoBOLLRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout style="@style/KChartConfigIndicatorEditBg">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:text="N"
+                            android:textColor="#3D516B" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/bollNTextView"
+                            style="@style/KChartConfigIndicatorEditText"
+                            tools:text="15" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout style="@style/KChartConfigIndicatorEditBg">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:text="P"
+                            android:textColor="#3D516B" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/bollPTextView"
+                            style="@style/KChartConfigIndicatorEditText"
+                            tools:text="15" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <include layout="@layout/kchart_reset_button" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/kchart_config_indicator_line2" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/KChartConfigIndicatorSubText"
+                        android:text="@string/kchart_introduction" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/KChartConfigIndicatorDesText"
+                        android:text="@string/kchart_boll_des" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/KChartConfigTitle.ClassText"
+                android:text="@string/kchart_second_draw" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+
+            <RelativeLayout
+                android:id="@+id/layoutMACDView"
+                style="@style/KChartConfigTitle">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/nameMACDTextView"
+                    style="@style/KChartConfigIndicatorTitleText"
+                    android:text="MACD" />
+
+
+                <LinearLayout
+                    android:id="@+id/macdTagLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/iconMACDImageView"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iconMACDImageView"
+                    style="@style/KChartConfigIndicatorDropImg"
+                    app:tint="@color/kchart_config_indicator_tag_text" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/infoMACDRelativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/macdLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout style="@style/KChartConfigIndicatorEditBg">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="S"
+                            android:textColor="#3D516B" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/macdSText"
+                            style="@style/KChartConfigIndicatorEditText"
+                            tools:text="15" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/KChartConfigIndicatorEditBg">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="L"
+                            android:textColor="#3D516B" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/macdLText"
+                            style="@style/KChartConfigIndicatorEditText"
+                            tools:text="15" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/KChartConfigIndicatorEditBg">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="M"
+                            android:textColor="#3D516B" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/macdMText"
+                            style="@style/KChartConfigIndicatorEditText"
+                            tools:text="15" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/kchart_reset_button" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/kchart_config_indicator_line2" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/KChartConfigIndicatorSubText"
+                        android:text="@string/kchart_introduction" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/KChartConfigIndicatorDesText"
+                        android:text="@string/kchart_macd_des" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+
+            <RelativeLayout
+                android:id="@+id/layoutKDJView"
+                style="@style/KChartConfigTitle">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/nameKDJTextView"
+                    style="@style/KChartConfigIndicatorTitleText"
+                    android:text="KDJ" />
+
+
+                <LinearLayout
+                    android:id="@+id/kdjTagLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/iconKDJImageView"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iconKDJImageView"
+                    style="@style/KChartConfigIndicatorDropImg"
+                    app:tint="@color/kchart_config_indicator_tag_text" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/infoKDJRelativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout style="@style/KChartConfigIndicatorEditBg">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:text="N"
+                            android:textColor="#3D516B" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/kdjNTextView"
+                            style="@style/KChartConfigIndicatorEditText"
+                            tools:text="15" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/KChartConfigIndicatorEditBg">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:text="M1"
+                            android:textColor="#3D516B" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/kdjM1TextView"
+                            style="@style/KChartConfigIndicatorEditText"
+                            tools:text="15" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/KChartConfigIndicatorEditBg">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:text="M2"
+                            android:textColor="#3D516B" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/kdjM2TextView"
+                            style="@style/KChartConfigIndicatorEditText"
+                            tools:text="15" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <include layout="@layout/kchart_reset_button" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/kchart_config_indicator_line2" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/KChartConfigIndicatorSubText"
+                        android:text="@string/kchart_introduction" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/KChartConfigIndicatorDesText"
+                        android:text="@string/kchart_kdj_des" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+
+            <RelativeLayout
+                android:id="@+id/layoutRSIView"
+                style="@style/KChartConfigTitle">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/nameRSITextView"
+                    style="@style/KChartConfigIndicatorTitleText"
+                    android:text="RSI" />
+
+
+                <LinearLayout
+                    android:id="@+id/rsiTagLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/iconRSIImageView"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iconRSIImageView"
+                    style="@style/KChartConfigIndicatorDropImg"
+                    app:tint="@color/kchart_config_indicator_tag_text" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/infoRSIRelativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout style="@style/KChartConfigIndicatorEditTop">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/rsi1Check"
+                            style="@style/KChartConfigIndicatorCheck.K1" />
+
+                        <LinearLayout style="@style/KChartConfigIndicatorEditBg.K1">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="RSI1"
+                                android:textColor="#3D516B" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/rsi1TextView"
+                                style="@style/KChartConfigIndicatorEditText.K1"
+                                tools:text="15" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/KChartConfigIndicatorEditTop">
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/rsi2Check"
+                            style="@style/KChartConfigIndicatorCheck.K2" />
+
+                        <LinearLayout style="@style/KChartConfigIndicatorEditBg.K2">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:text="RSI2"
+                                android:textColor="#3D516B" />
+
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/rsi2TextView"
+                                style="@style/KChartConfigIndicatorEditText.K2"
+                                tools:text="15" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout style="@style/KChartConfigIndicatorEditTop">
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/rsi3Check"
+                            style="@style/KChartConfigIndicatorCheck.K3" />
+
+                        <LinearLayout style="@style/KChartConfigIndicatorEditBg.K3">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:text="RSI3"
+                                android:textColor="#3D516B" />
+
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/rsi3TextView"
+                                style="@style/KChartConfigIndicatorEditText.K3"
+                                tools:text="15" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/KChartConfigIndicatorEditTop" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <include layout="@layout/kchart_reset_button" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/kchart_config_indicator_line2" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/KChartConfigIndicatorSubText"
+                        android:text="@string/kchart_introduction" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/KChartConfigIndicatorDesText"
+                        android:text="@string/kchart_rsi_des" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <RelativeLayout
+                android:id="@+id/layoutWRView"
+                style="@style/KChartConfigTitle">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/nameWRTextView"
+                    style="@style/KChartConfigIndicatorTitleText"
+                    android:text="WR" />
+
+                <LinearLayout
+                    android:id="@+id/wrTagLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/iconWRImageView"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iconWRImageView"
+                    style="@style/KChartConfigIndicatorDropImg"
+                    app:tint="@color/kchart_config_indicator_tag_text" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/infoWRRelativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout style="@style/KChartConfigIndicatorEditTop">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/wr1Check"
+                            style="@style/KChartConfigIndicatorCheck.K1" />
+
+                        <LinearLayout style="@style/KChartConfigIndicatorEditBg.K1">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="WR1"
+                                android:textColor="#3D516B" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/wr1TextView"
+                                style="@style/KChartConfigIndicatorEditText.K1"
+                                tools:text="15" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/KChartConfigIndicatorEditTop">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/wr2Check"
+                            style="@style/KChartConfigIndicatorCheck.K2" />
+
+                        <LinearLayout style="@style/KChartConfigIndicatorEditBg.K2">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:text="WR2"
+                                android:textColor="#3D516B" />
+
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/wr2TextView"
+                                style="@style/KChartConfigIndicatorEditText.K2"
+                                tools:text="15" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout style="@style/KChartConfigIndicatorEditTop">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/wr3Check"
+                            style="@style/KChartConfigIndicatorCheck.K3" />
+
+                        <LinearLayout style="@style/KChartConfigIndicatorEditBg.K3">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:text="WR3"
+                                android:textColor="#3D516B" />
+
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/wr3TextView"
+                                style="@style/KChartConfigIndicatorEditText.K3"
+                                android:layout_marginRight="16dp"
+                                tools:text="15" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/KChartConfigIndicatorEditTop" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <include layout="@layout/kchart_reset_button" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/kchart_config_indicator_line2" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/KChartConfigIndicatorSubText"
+                        android:text="@string/kchart_introduction" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/KChartConfigIndicatorDesText"
+                        android:text="@string/kchart_wr_des" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
+

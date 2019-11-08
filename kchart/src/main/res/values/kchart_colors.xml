@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="chart_red">#DF3536</color>
+    <color name="chart_green">#35DF7E</color>
+
+    <color name="chart_ma1">#18CCF6</color>
+    <color name="chart_ma2">#FE5EDF</color>
+    <color name="chart_ma3">#E7A520</color>
+    <color name="chart_ma4">#EF5350</color>
+    <color name="chart_ma5">#7E57C2</color>
+    <color name="chart_ma6">#9CCC65</color>
+
+    <color name="chart_white">#fff</color>
+
+    <color name="chart_background">#202326</color>
+    <color name="chart_grid_line">#353941</color>
+    <color name="chart_text">#B1B2B6</color>
+    <color name="chart_selector">#c830343C</color>
+    <color name="chart_tab_background">#30343C</color>
+    <color name="chart_tab_indicator">#FF6601</color>
+
+    <color name="time_step_view_line_color">#1882D4</color>
+    <color name="time_step_view_text_color">#6D87A8</color>
+
+    <color name="indicator_select_color">#CCD0E6</color>
+    <color name="indicator_unSelect_color">#6D87A8</color>
+
+    <color name="minute_chart_line_color">#4B85D6</color>
+    <color name="minute_chart_entity_color">#1A4B85D6</color>
+
+    <color name="black_select_chart">#CCD0E6</color>
+    <color name="black_noSelect_chart">#6D87A8</color>
+
+    <color name="black_volume_min">#155184</color>
+
+    <color name="kchart_config_indicator_tag_text">#465367</color>
+    <color name="kchart_config_indicator_reset">#4E5F71</color>
+    <color name="kchart_config_indicator_line2">#243441</color>
+    <color name="kchart_config_indicator_ring">#2D3647</color>
+
+</resources>

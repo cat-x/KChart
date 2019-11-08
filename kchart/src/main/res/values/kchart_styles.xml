@@ -1,0 +1,187 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar.KChart" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="KChartConfigTitle">
+        <item name="android:background">#131F2F</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="KChartConfigTitle.ClassText" parent="KChartConfigTitle">
+        <item name="android:textColor">#3D516A</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--	<style name="KChartConfigIndicatorTipText">-->
+    <!--		<item name="android:layout_marginRight">3dp</item>-->
+    <!--		<item name="android:layout_height">wrap_content</item>-->
+    <!--		<item name="android:layout_width">wrap_content</item>-->
+    <!--		<item name="android:textColor">@color/kchart_config_indicator_tag_text</item>-->
+    <!--		<item name="android:textSize">@dimen/kchart_config_indicator_tag_text_size</item>-->
+    <!--	</style>-->
+
+    <style name="KChartConfigIndicatorDropImg">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:src">@mipmap/kchart_icon_drop_select</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+
+    <style name="KChartConfigIndicatorTitleText">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#CFD3E9</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="KChartConfigIndicatorSubText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#C7CBE1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="KChartConfigIndicatorDesText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">#3B5068</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="KChartConfigIndicatorEditTop">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+
+    <style name="KChartConfigIndicatorEditBg">
+        <item name="android:background">@drawable/kchart_indicator_edit_normal_bg</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+    </style>
+
+    <style name="KChartConfigIndicatorEditBg.K1">
+        <item name="android:background">@drawable/kchart_indicator_edit_1_bg</item>
+    </style>
+
+    <style name="KChartConfigIndicatorEditBg.K2">
+        <item name="android:background">@drawable/kchart_indicator_edit_2_bg</item>
+    </style>
+
+    <style name="KChartConfigIndicatorEditBg.K3">
+        <item name="android:background">@drawable/kchart_indicator_edit_3_bg</item>
+    </style>
+
+    <style name="KChartConfigIndicatorEditBg.K4">
+        <item name="android:background">@drawable/kchart_indicator_edit_4_bg</item>
+    </style>
+
+    <style name="KChartConfigIndicatorEditBg.K5">
+        <item name="android:background">@drawable/kchart_indicator_edit_5_bg</item>
+    </style>
+
+    <style name="KChartConfigIndicatorEditBg.K6">
+        <item name="android:background">@drawable/kchart_indicator_edit_6_bg</item>
+    </style>
+
+
+    <style name="KChartConfigIndicatorEditText">
+        <item name="android:singleLine">true</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">3</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">#3D516B</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="KChartConfigIndicatorEditText.K1">
+        <item name="android:textColor">@color/chart_ma1</item>
+    </style>
+
+    <style name="KChartConfigIndicatorEditText.K2">
+        <item name="android:textColor">@color/chart_ma2</item>
+    </style>
+
+    <style name="KChartConfigIndicatorEditText.K3">
+        <item name="android:textColor">@color/chart_ma3</item>
+    </style>
+
+    <style name="KChartConfigIndicatorEditText.K4">
+        <item name="android:textColor">@color/chart_ma4</item>
+    </style>
+
+    <style name="KChartConfigIndicatorEditText.K5">
+        <item name="android:textColor">@color/chart_ma5</item>
+    </style>
+
+    <style name="KChartConfigIndicatorEditText.K6">
+        <item name="android:textColor">@color/chart_ma6</item>
+    </style>
+
+    <style name="KChartConfigIndicatorCheck">
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:layout_width">28dp</item>
+    </style>
+
+    <style name="KChartConfigIndicatorCheck.K1">
+        <item name="android:src">@drawable/kchart_icon_check_k1</item>
+    </style>
+
+    <style name="KChartConfigIndicatorCheck.K2">
+        <item name="android:src">@drawable/kchart_icon_check_k2</item>
+    </style>
+
+    <style name="KChartConfigIndicatorCheck.K3">
+        <item name="android:src">@drawable/kchart_icon_check_k3</item>
+    </style>
+
+    <style name="KChartConfigIndicatorCheck.K4">
+        <item name="android:src">@drawable/kchart_icon_check_k4</item>
+    </style>
+
+    <style name="KChartConfigIndicatorCheck.K5">
+        <item name="android:src">@drawable/kchart_icon_check_k5</item>
+    </style>
+
+    <style name="KChartConfigIndicatorCheck.K6">
+        <item name="android:src">@drawable/kchart_icon_check_k6</item>
+    </style>
+
+
+</resources>
